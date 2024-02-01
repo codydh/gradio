@@ -1,5 +1,37 @@
 # gradio
 
+## 4.17.0
+
+### Features
+
+- [#7129](https://github.com/gradio-app/gradio/pull/7129) [`ccdaec4`](https://github.com/gradio-app/gradio/commit/ccdaec45002d0a9d6016e8e2078b843a1ff9172b) - Add a `simpleimage` template for custom components.  Thanks [@abidlabs](https://github.com/abidlabs)!
+- [#7205](https://github.com/gradio-app/gradio/pull/7205) [`e418edd`](https://github.com/gradio-app/gradio/commit/e418edd011d06df519c778b9a50573288d5bf30f) - Fix SimpleImage package json.  Thanks [@abidlabs](https://github.com/abidlabs)!
+- [#7206](https://github.com/gradio-app/gradio/pull/7206) [`572e360`](https://github.com/gradio-app/gradio/commit/572e360fff4a03c335b86e1a7517a44cb6af2bcd) - Upload tweak.  Thanks [@pngwn](https://github.com/pngwn)!
+- [#7102](https://github.com/gradio-app/gradio/pull/7102) [`68a54a7`](https://github.com/gradio-app/gradio/commit/68a54a7a310d8d7072fdae930bf1cfdf12c45a7f) - Improve chatbot streaming performance with diffs.  Thanks [@aliabid94](https://github.com/aliabid94)!/n  Note that this PR changes the API format for generator functions, which would be a breaking change for any clients reading the EventStream directly
+- [#7208](https://github.com/gradio-app/gradio/pull/7208) [`efacc7d`](https://github.com/gradio-app/gradio/commit/efacc7d5cb0d1c6448cbec82abfc00ad6da05b3f) - Ensure `open` reactivity in Accordion.  Thanks [@hannahblair](https://github.com/hannahblair)!
+- [#7236](https://github.com/gradio-app/gradio/pull/7236) [`dec6a71`](https://github.com/gradio-app/gradio/commit/dec6a715d6219b00bd0151dd7c13bb2bc99c86da) - Fix PIL imports.  Thanks [@akx](https://github.com/akx)!
+- [#7116](https://github.com/gradio-app/gradio/pull/7116) [`3c8c4ac`](https://github.com/gradio-app/gradio/commit/3c8c4ac2db284e1cb503c397205a79a6dcc27e23) - Document the `gr.ParamViewer` component, and fix component preprocessing/postprocessing docstrings.  Thanks [@abidlabs](https://github.com/abidlabs)!
+- [#7157](https://github.com/gradio-app/gradio/pull/7157) [`46919c5`](https://github.com/gradio-app/gradio/commit/46919c5a4721ca2b0e17e38dc8c641f7ef336bcc) - Defer importing matplotlib.  Thanks [@akx](https://github.com/akx)!
+- [#7154](https://github.com/gradio-app/gradio/pull/7154) [`aab2a75`](https://github.com/gradio-app/gradio/commit/aab2a75f0610dd7ed0b481264c6b9f01cfe92094) - Allow selecting texts in dataframe cells.  Thanks [@shubhamofbce](https://github.com/shubhamofbce)!
+- [#7061](https://github.com/gradio-app/gradio/pull/7061) [`05d8a3c`](https://github.com/gradio-app/gradio/commit/05d8a3c8030b733bd47250f5db6f89f230f9a707) - Update ruff to 0.1.13, enable more rules, fix issues.  Thanks [@akx](https://github.com/akx)!
+- [#7229](https://github.com/gradio-app/gradio/pull/7229) [`6a7e98b`](https://github.com/gradio-app/gradio/commit/6a7e98bfefdc9530f0390f0d780edc5a35266d56) - Fix hyphen-bug in gradio cc publish.  Thanks [@freddyaboulton](https://github.com/freddyaboulton)!
+- [#7225](https://github.com/gradio-app/gradio/pull/7225) [`60078df`](https://github.com/gradio-app/gradio/commit/60078df07f38c0ef90ef2ba90f8e3272b92c9e3d) - Fix test requirements to be compatible with python 3.11.  Thanks [@abidlabs](https://github.com/abidlabs)!
+- [#7256](https://github.com/gradio-app/gradio/pull/7256) [`09257ef`](https://github.com/gradio-app/gradio/commit/09257ef1f1307e2886418f6dd93dcffdf010c32b) - Fix ci cache.  Thanks [@pngwn](https://github.com/pngwn)!
+- [#7240](https://github.com/gradio-app/gradio/pull/7240) [`1893756`](https://github.com/gradio-app/gradio/commit/18937564ab8906710549d5bccc48f7188c836f38) - Small cleanups of `Code` component.  Thanks [@abidlabs](https://github.com/abidlabs)!
+
+### Fixes
+
+- [#7117](https://github.com/gradio-app/gradio/pull/7117) [`24157a3`](https://github.com/gradio-app/gradio/commit/24157a36028b3f606194bd9977634318650b2d46) - add background color based on the OS mode.  Thanks [@aileenvl](https://github.com/aileenvl)!
+- [#7192](https://github.com/gradio-app/gradio/pull/7192) [`8dd6f4b`](https://github.com/gradio-app/gradio/commit/8dd6f4bc1901792f05cd59e86df7b1dbab692739) - Handle the case where examples is `null` for all components.  Thanks [@abidlabs](https://github.com/abidlabs)!
+- [#7190](https://github.com/gradio-app/gradio/pull/7190) [`2d51a9d`](https://github.com/gradio-app/gradio/commit/2d51a9dbd97167aa7a2b3aa672142c1a5137e898) - Add missing parameters and docstrings for `gr.TabbedInterface`.  Thanks [@abidlabs](https://github.com/abidlabs)!
+- [#7178](https://github.com/gradio-app/gradio/pull/7178) [`9f23b0b`](https://github.com/gradio-app/gradio/commit/9f23b0bc54b4ef63c056b309370df52ec2c2a43c) - Optimize client view_api method.  Thanks [@freddyaboulton](https://github.com/freddyaboulton)!
+- [#7158](https://github.com/gradio-app/gradio/pull/7158) [`ded5256`](https://github.com/gradio-app/gradio/commit/ded5256c4a39a84155b9c3d7f4e8e7060d798186) - Fix audio recording events not dispatching.  Thanks [@hannahblair](https://github.com/hannahblair)!
+- [#7141](https://github.com/gradio-app/gradio/pull/7141) [`c3e61e4`](https://github.com/gradio-app/gradio/commit/c3e61e4f70696a71aede67b65d28447eb67daf16) - Few File component drag and drop.  Thanks [@dawoodkhan82](https://github.com/dawoodkhan82)!
+- [#7221](https://github.com/gradio-app/gradio/pull/7221) [`cae05c0`](https://github.com/gradio-app/gradio/commit/cae05c05ecde56c4d92c6b5ed8d13353505cbd14) - Fix single file upload display.  Thanks [@freddyaboulton](https://github.com/freddyaboulton)!
+- [#7207](https://github.com/gradio-app/gradio/pull/7207) [`e3217b4`](https://github.com/gradio-app/gradio/commit/e3217b41862925a6a05f44070ac2bdabbeee6769) - Amend audio waveform colour.  Thanks [@hannahblair](https://github.com/hannahblair)!
+- [#7219](https://github.com/gradio-app/gradio/pull/7219) [`faead14`](https://github.com/gradio-app/gradio/commit/faead1403cdba6415912a6ad512291ac63b04173) - Show label in interactive image editor.  Thanks [@hannahblair](https://github.com/hannahblair)!
+- [#7220](https://github.com/gradio-app/gradio/pull/7220) [`3b8dfc6`](https://github.com/gradio-app/gradio/commit/3b8dfc684dc0eb0544d06300fa546b23f587c63f) - Add `visible` check to Tab.  Thanks [@hannahblair](https://github.com/hannahblair)!
+
 ## 4.16.0
 
 ### Features
